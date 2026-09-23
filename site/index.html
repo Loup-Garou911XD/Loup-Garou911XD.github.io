@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Loup: things that run where they weren't meant to</title>
+<meta name="description" content="Loup (Loup-Garou911XD): 673 commits into the BombSquad game engine and its plugin manager, plus a dedicated server that runs on an Android phone.">
+<meta name="theme-color" content="#0d1120">
+<meta property="og:title" content="Loup: things that run where they weren't meant to">
+<meta property="og:description" content="673 commits into the BombSquad engine and its plugin manager. A game server that runs on a phone.">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<script>document.documentElement.className="js"</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#upstream">Skip to projects</a>
+
+<header class="bar">
+  <a class="mark" href="#top"><span class="mark-dot">·</span>loup</a>
+  <nav class="bar-nav">
+    <a href="#upstream">Upstream</a>
+    <a href="#work">My own</a>
+    <a href="#toolbox">Toolbox</a>
+    <a class="bar-out" href="https://github.com/Loup-Garou911XD">GitHub&#8202;<span aria-hidden="true">↗</span></a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- ─────────────────────────── hero ─────────────────────────── -->
+  <section class="hero">
+    <div class="hero-text">
+      <p class="eyebrow r1">Loup <span class="sep">/</span> Loup-Garou911XD</p>
+      <h1 class="r2">
+        <span class="dim">I make things run</span><br>
+        where they weren't<br>
+        meant to run<span class="dot">.</span>
+      </h1>
+      <p class="lede r3">A dedicated game server on an Android phone. A GUI builder that lives inside a game engine. The Linux packaging and build plumbing underneath both. Mostly Python, Shell and a great deal of CI.</p>
+      <div class="hero-cta r4">
+        <a class="btn btn-primary" href="#upstream">See the work</a>
+        <a class="btn" href="https://github.com/Loup-Garou911XD">GitHub profile</a>
+      </div>
+    </div>
+
+    <figure class="moon-wrap r3">
+      <svg class="moon" viewBox="0 0 200 200" role="img" aria-label="A moon that waxes from crescent to full as the page scrolls">
+        <defs>
+          <radialGradient id="lit" cx="36%" cy="30%" r="78%">
+            <stop offset="0%" stop-color="#fffefb"/>
+            <stop offset="52%" stop-color="#dfe4f4"/>
+            <stop offset="100%" stop-color="#8e97b8"/>
+          </radialGradient>
+          <mask id="phase">
+            <rect x="100" y="0" width="101" height="200" fill="#fff"/>
+            <ellipse id="terminator" cx="100" cy="100" rx="70" ry="80" fill="#000"/>
+          </mask>
+        </defs>
+        <circle cx="100" cy="100" r="80" fill="#141a2e"/>
+        <g mask="url(#phase)">
+          <circle cx="100" cy="100" r="80" fill="url(#lit)"/>
+          <circle cx="74" cy="66" r="14" fill="#a7afcd" opacity=".38"/>
+          <circle cx="118" cy="92" r="9"  fill="#a7afcd" opacity=".30"/>
+          <circle cx="86" cy="126" r="18" fill="#a7afcd" opacity=".26"/>
+          <circle cx="132" cy="140" r="7" fill="#a7afcd" opacity=".34"/>
+          <circle cx="56" cy="104" r="6"  fill="#a7afcd" opacity=".30"/>
+        </g>
+        <circle cx="100" cy="100" r="80" fill="none" stroke="rgba(234,238,249,.16)" stroke-width="1"/>
+      </svg>
+      <figcaption class="moon-cap">Phase <span id="phase-pct">6</span>%<span id="wax-hint"> <span class="sep">/</span> scroll to wax</span></figcaption>
+    </figure>
+  </section>
+
+  <!-- ───────────────────────── upstream ───────────────────────── -->
+  <section id="upstream" class="band">
+    <div class="head">
+      <h2>Upstream</h2>
+      <p class="count">685 commits <span class="sep">/</span> 124 merged pull requests</p>
+    </div>
+    <p class="band-intro">Most of my work lands in projects I did not start: the BombSquad game engine, the plugin manager that delivers community plugins to it, and the porting tool that keeps those plugins working across API breaks. Figures come from each repository's contributor graph.</p>
+
+    <div class="up-grid">
+
+      <a class="up reveal" href="https://github.com/efroemling/ballistica">
+        <p class="up-owner">efroemling<span class="sl">/</span></p>
+        <h3 class="up-name">ballistica</h3>
+        <p class="up-desc">The BombSquad game engine. I work the Linux side of it: Flatpak and Flathub packaging, the build environment, CI workflows and docs.</p>
+
+        <dl class="stats">
+          <div class="stat">
+            <dt>Stars</dt>
+            <dd><svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.05 6.6.92-4.8 4.62 1.17 6.56L12 17.55 6.13 20.65 7.3 14.09 2.5 9.47l6.6-.92z"/></svg><b data-stars="efroemling/ballistica">708</b></dd>
+          </div>
+          <div class="stat">
+            <dt>Commits</dt>
+            <dd><b>342</b></dd>
+          </div>
+          <div class="stat">
+            <dt>Merged PRs</dt>
+            <dd><b>47</b></dd>
+          </div>
+          <div class="stat">
+            <dt>Since</dt>
+            <dd><b class="since">Mar 2024</b></dd>
+          </div>
+        </dl>
+
+        <div class="churn">
+          <div class="churn-bar" aria-hidden="true">
+            <span class="seg seg-add" style="width:61.7%"></span>
+            <span class="seg seg-del" style="width:38.3%"></span>
+          </div>
+          <p class="churn-key">
+            <span class="key key-add"><i></i>+13,811 added</span>
+            <span class="key key-del"><i></i>&minus;8,576 removed</span>
+          </p>
+        </div>
+      </a>
+
+      <a class="up reveal" href="https://github.com/bombsquad-community/plugin-manager">
+        <p class="up-owner">bombsquad-community<span class="sl">/</span></p>
+        <h3 class="up-name">plugin-manager</h3>
+        <p class="up-desc">Installs and updates community plugins from inside the game. I keep the release pipeline and its CI running, including closing a <code class="inl">pull_request_target</code> hole, and land catalog fixes.</p>
+
+        <dl class="stats">
+          <div class="stat">
+            <dt>Stars</dt>
+            <dd><svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.05 6.6.92-4.8 4.62 1.17 6.56L12 17.55 6.13 20.65 7.3 14.09 2.5 9.47l6.6-.92z"/></svg><b data-stars="bombsquad-community/plugin-manager">61</b></dd>
+          </div>
+          <div class="stat">
+            <dt>Commits</dt>
+            <dd><b>331</b></dd>
+          </div>
+          <div class="stat">
+            <dt>Merged PRs</dt>
+            <dd><b>75</b></dd>
+          </div>
+          <div class="stat">
+            <dt>Since</dt>
+            <dd><b class="since">Sep 2022</b></dd>
+          </div>
+        </dl>
+
+        <div class="churn">
+          <div class="churn-bar" aria-hidden="true">
+            <span class="seg seg-add" style="width:43.7%"></span>
+            <span class="seg seg-del" style="width:56.3%"></span>
+          </div>
+          <p class="churn-key">
+            <span class="key key-add"><i></i>+29,101 added</span>
+            <span class="key key-del"><i></i>&minus;37,438 removed</span>
+          </p>
+        </div>
+      </a>
+
+    </div>
+
+    <a class="also reveal" href="https://github.com/bombsquad-community/baport">
+      <div class="also-id">
+        <p class="up-owner">bombsquad-community<span class="sl">/</span></p>
+        <h3 class="also-name">baport</h3>
+      </div>
+      <p class="also-desc">Rewrites BombSquad plugins from API 6 and 7 up to API 8 and 9, so a mod written four engine versions ago still loads.</p>
+      <p class="also-stats">
+        <span><svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.05 6.6.92-4.8 4.62 1.17 6.56L12 17.55 6.13 20.65 7.3 14.09 2.5 9.47l6.6-.92z"/></svg><b data-stars="bombsquad-community/baport">2</b></span>
+        <span><b>12</b> commits</span>
+        <span class="also-churn"><i class="d-add"></i>+1,503 <i class="d-del"></i>&minus;980</span>
+        <span>since Jul 2023</span>
+      </p>
+    </a>
+  </section>
+
+  <!-- ─────────────────────────── work ─────────────────────────── -->
+  <section id="work" class="band">
+    <div class="head">
+      <h2>Built by me</h2>
+      <p class="count">4 public repositories</p>
+    </div>
+
+    <article class="feature reveal">
+      <p class="eyebrow">The one other people actually use</p>
+      <h3 class="feature-title"><a href="https://github.com/Loup-Garou911XD/bombsquad_server-termux">bombsquad_server-termux</a></h3>
+      <p class="feature-desc">One command turns an Android phone into a BombSquad dedicated server. It fetches the latest server build, pairs it with the newest Python the engine still accepts, and hands you a running instance. No root, no desktop, no cross-compiling.</p>
+      <div class="cmd">
+        <code id="cmd-text">bash &lt;(curl -s https://raw.githubusercontent.com/Loup-Garou911XD/bombsquad_server-termux/main/setup.sh)</code>
+        <button class="copy" type="button" data-copy="#cmd-text">Copy</button>
+      </div>
+      <footer class="meta">
+        <span class="runs">Runs on a phone</span>
+        <span class="lang"><i style="--c:#89e051"></i>Shell</span>
+        <span class="stars" data-repo="bombsquad_server-termux"><b>17</b> stars</span>
+        <span class="pushed" data-repo="bombsquad_server-termux">Jul 2025</span>
+      </footer>
+    </article>
+
+    <div class="grid">
+
+      <article class="card reveal">
+        <header class="card-head">
+          <p class="card-owner">bombsquad-community<span class="sl">/</span></p>
+          <h3><a class="stretch" href="https://github.com/bombsquad-community/pterodactyl-egg">pterodactyl-egg</a></h3>
+          <span class="runs">Runs on a game panel</span>
+        </header>
+        <p>An egg for the Pterodactyl panel that provisions a BombSquad server: install script, Docker entrypoint and the egg JSON. Import it into a nest and the server becomes something you administer from a web panel instead of a shell.</p>
+        <footer class="meta">
+          <span class="lang"><i style="--c:#89e051"></i>Shell</span>
+          <span class="stars" data-repo="bombsquad-community/pterodactyl-egg"><b>1</b> star</span>
+          <span class="pushed">Jan 2026</span>
+        </footer>
+      </article>
+
+      <article class="card reveal">
+        <header class="card-head">
+          <h3><a class="stretch" href="https://github.com/Loup-Garou911XD/bombsquad_abilities">bombsquad_abilities</a></h3>
+          <span class="runs">Runs on a game server</span>
+        </header>
+        <p>Every playable character gets a signature power. Ninja turns invisible for three seconds after a kill, Bones drops a giant bomb when he dies, Pixel can fly, Pascal slows anyone in his radius. Balance is an ongoing argument.</p>
+        <footer class="meta">
+          <span class="lang"><i style="--c:#3572A5"></i>Python</span>
+          <span class="stars" data-repo="bombsquad_abilities"><b>1</b> star</span>
+          <span class="pushed" data-repo="bombsquad_abilities">May 2023</span>
+        </footer>
+      </article>
+
+      <article class="card reveal">
+        <header class="card-head">
+          <h3><a class="stretch" href="https://github.com/Loup-Garou911XD/bombsquad_gui_maker">bombsquad_gui_maker</a></h3>
+          <span class="runs">Runs inside the game</span>
+        </header>
+        <p>A plugin for building plugin interfaces. Drop buttons and labels onto a live screen, edit their attributes in place, and skip the compile-look-repeat loop that BombSquad's UI layer otherwise demands.</p>
+        <footer class="meta">
+          <span class="lang"><i style="--c:#3572A5"></i>Python</span>
+          <span class="pushed" data-repo="bombsquad_gui_maker">May 2025</span>
+        </footer>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ─────────────────────────── toolbox ─────────────────────────── -->
+  <section id="toolbox" class="band band-last">
+    <div class="head">
+      <h2>Toolbox</h2>
+      <p class="count">What I reach for</p>
+    </div>
+    <div class="toolbox">
+      <div class="tb-note">
+        <p>I spend most of my time close to the runtime: shell scripts that bootstrap awkward environments, Python that patches a game engine from the inside, and the build and packaging plumbing that gets either one onto a machine it was not packaged for.</p>
+        <p class="tb-quiet">Plenty of my work sits in private repositories, so this page shows the public half. Open to collaborating on game-server tooling, build systems and CI, or automation of most kinds.</p>
+      </div>
+      <ul class="chips">
+        <li>Python</li><li>Shell</li><li>TypeScript</li><li>C++</li>
+        <li>Node</li><li>React</li><li>Linux</li><li>Docker</li>
+        <li>Flatpak</li><li>GitHub Actions</li><li>CMake</li><li>CI/CD</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <p class="foot-mark"><span class="mark-dot">·</span>loup</p>
+  <nav class="foot-links">
+    <a href="https://github.com/Loup-Garou911XD">GitHub</a>
+    <!-- Uncomment to publish your email address:
+    <a href="mailto:you@example.com">Email</a>
+    -->
+  </nav>
+  <p class="foot-note">Built as a static page, deployed by GitHub Actions.</p>
+</footer>
+
+<script src="main.js" defer></script>
+</body>
+</html>
